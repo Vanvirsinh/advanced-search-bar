@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Breaking Bad",
+      "description": "A high school chemistry teacher turned methamphetamine manufacturer."
+    },
+    {
+      "id": 2,
+      "name": "Stranger Things",
+      "description": "A group of kids uncover supernatural events in their small town."
+    },
+    {
+      "id": 3,
+      "name": "Game of Thrones",
+      "description": "Noble families vie for control of the Iron Throne in a fantasy world."
+    },
+    {
+      "id": 4,
+      "name": "The Office",
+      "description": "A mockumentary on a group of office workers."
+    },
+    {
+      "id": 5,
+      "name": "Friends",
+      "description": "Follows the lives of six friends living in New York City."
+    },
+    {
+      "id": 6,
+      "name": "The Crown",
+      "description": "The story of the reign of Queen Elizabeth II."
+    },
+    {
+      "id": 7,
+      "name": "Black Mirror",
+      "description": "An anthology series exploring a twisted, high-tech multiverse."
+    }
+  ]

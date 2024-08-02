@@ -1,0 +1,145 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #a7c1e7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search_input::placeholder {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Search Section */
+.search_section {
+  width: 400px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Icon Container */
+.search_input_div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search_input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 1px solid #c7c7c7;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.search_icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_icon svg {
+  color: #aaa;
+  transition: 0.3s ease;
+}
+
+.search_icon svg:hover {
+  color: #7a7a7a;
+}
+
+/* Search Results */
+.search_result {
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  position: relative;
+  padding-right: 10px; 
+  height: 300px; /* Fixed height */
+}
+
+/* Custom Scrollbar Styles */
+.search_result::-webkit-scrollbar {
+  width: 10px;
+}
+
+.search_result::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+  border-radius: 10px;
+}
+
+.search_result::-webkit-scrollbar-thumb:hover {
+  background: #aeaeae;
+}
+
+.search_suggestion_line {
+  display: block;
+  padding: 12px 10px;
+  border-bottom: 1px solid rgb(198, 198, 198);
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition:0.3s ;
+  word-wrap: break-word;
+}
+
+.search_suggestion_line:hover {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search_suggestion_line.active {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/* Loading and No Results */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.no_results {
+  text-align: center;
+  padding: 10px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Media Queries for Mobile Adaptation */
+@media (max-width: 768px) {
+  .search_section {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .search_input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .search_suggestion_line {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .search_result {
+    padding-right: 5px;
+  }
+}
